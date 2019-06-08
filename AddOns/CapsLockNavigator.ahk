@@ -42,6 +42,7 @@
         $*-::
             Send, ^{k}
             Send, ^{u}
+            return
 
     ;Select Between
         $*9::
