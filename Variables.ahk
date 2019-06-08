@@ -18,3 +18,18 @@
         ` & Numpad3::switchDesktopByNumber(3)
         ` & Numpad4::switchDesktopByNumber(4)
         ` & Numpad5::switchDesktopByNumber(5)
+        AppsKey::
+            if CurrentDesktop >= 2
+            {
+                ;Send, ^#{Right}
+                switchDesktopByNumber(1)
+                ;Desktop = 2
+                return
+            }
+            else if CurrentDesktop <= 1
+            {
+                ;Send, ^#{Left}
+                switchDesktopByNumber(2)
+                ;Desktop = 1
+                return
+            }
