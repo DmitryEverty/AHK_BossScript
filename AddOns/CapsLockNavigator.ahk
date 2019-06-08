@@ -47,5 +47,16 @@
         $*;::
             Send, ^{k}  
             Send, {"}
+            return
+
+        $*[::
+            Send, ^{k}  
+            Send, {[}
             return 
+            
+        $*]::
+            Send, ^{k}  
+            Send, {{}
+            return
+
 return
