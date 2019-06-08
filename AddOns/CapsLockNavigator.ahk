@@ -30,8 +30,18 @@
     $*k::Send, {Blind}{Up}
     $*l::Send, {Blind}{Right}
 ;VsCode
-    $*LButton::Send, ^{[}    
-    $*RButton::Send, ^{]}    
+    ;Identation
+        $*LButton::Send, ^{[}    
+        $*RButton::Send, ^{]}
+
+    ;Comment Uncomment
+        $*=::
+            Send, ^{k}
+            Send, ^{c}
+            return    
+        $*-::
+            Send, ^{k}
+            Send, ^{u}
 
     ;Select Between
         $*9::
