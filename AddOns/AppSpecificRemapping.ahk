@@ -36,7 +36,7 @@
         
     #IfWinActive
 ;Explorer
-    #IfWinActive ahk_exe Explorer.exe	
+    #IfWinActive ahk_class CabinetWClass	
         Esc::
             Send, {F11}
             return
