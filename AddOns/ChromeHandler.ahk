@@ -1,6 +1,13 @@
-;Control + Numpad0
-<^Numpad0::
+;LeftControl + Numpad0
+;Open new instance or bring up existing.
+<^Numpad0:: 
     ChromeHandler()
+
+;RightControl + Numpad0;
+;Open Chrome in incognito
+>^Numpad0:: 
+	Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" -incognito
+	return
 
 ChromeHandler(){
     if WinExist ("ahk_exe Chrome.exe") {
