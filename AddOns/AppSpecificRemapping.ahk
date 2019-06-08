@@ -15,8 +15,8 @@
     #IfWinActive
 ;Illustrator
     #IfWinActive ahk_exe Illustrator.exe
-        Tab::Space        
-            return
+        MButton::^+a ; Deselect
+        return
 
     #IfWinActive
 
