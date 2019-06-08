@@ -43,3 +43,8 @@
         F1::
             WinMove, ahk_class CabinetWClass, , 287, 69, 870, 657
             return
+    #IfWinActive
+;VsCode
+    #IfWinActive ahk_exe Code.exe
+        
+    #IfWinActive

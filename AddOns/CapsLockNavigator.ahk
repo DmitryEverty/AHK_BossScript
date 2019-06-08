@@ -29,4 +29,7 @@
     $*j::Send, {Blind}{Down}
     $*k::Send, {Blind}{Up}
     $*l::Send, {Blind}{Right}
+
+    $*LButton::Send, ^{[}    
+    $*RButton::Send, ^{]}    
 return
