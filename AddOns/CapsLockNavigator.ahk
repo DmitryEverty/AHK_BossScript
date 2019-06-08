@@ -29,7 +29,23 @@
     $*j::Send, {Blind}{Down}
     $*k::Send, {Blind}{Up}
     $*l::Send, {Blind}{Right}
-
+;VsCode
     $*LButton::Send, ^{[}    
     $*RButton::Send, ^{]}    
+
+    ;Select Between
+        $*9::
+            Send, ^{k}  
+            Send, {(}
+            return  
+
+        $*'::
+            Send, ^{k}  
+            Send, {'}
+            return
+
+        $*;::
+            Send, ^{k}  
+            Send, {"}
+            return 
 return
