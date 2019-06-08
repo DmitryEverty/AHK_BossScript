@@ -1,6 +1,6 @@
 #NoEnv    
 #SingleInstance, Force
-wdth := A_ScreenWidth - 200, hght := A_ScreenHeight - 845
+wdth := A_ScreenWidth - 280, hght := A_ScreenHeight - 1400
 
 Progress, b2 fs10 fm10 zh10 CTgreen CWFFFFFF  X%wdth% Y%hght% w180, % "00:00", Enter start time, Countdowner
 WinSet, TransColor, FFFFFF 255, Countdowner
