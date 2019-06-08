@@ -8,3 +8,13 @@
     caps := 0
     *Capslock::caps := 1
     *Capslock Up::caps := 0
+;VirtualDesktopManager
+    ; Globals
+        DesktopCount = 2        ; Windows starts with 2 desktops at boot
+        CurrentDesktop = 1      ; Desktop count is 1-indexed (Microsoft numbers them this way)
+    ;Hotkeys
+        ` & Numpad1::switchDesktopByNumber(1)
+        ` & Numpad2::switchDesktopByNumber(2)
+        ` & Numpad3::switchDesktopByNumber(3)
+        ` & Numpad4::switchDesktopByNumber(4)
+        ` & Numpad5::switchDesktopByNumber(5)

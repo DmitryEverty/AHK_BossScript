@@ -8,3 +8,4 @@
 #Include, %A_ScriptDir%\AddOns\ChromeHandler.ahk
 #Include, %A_ScriptDir%\AddOns\AppSpecificRemapping.ahk
 #Include, %A_ScriptDir%\AddOns\CapsLockNavigator.ahk
+#Include, %A_ScriptDir%\AddOns\VirtualDesktopManager.ahk
