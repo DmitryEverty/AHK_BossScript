@@ -1,8 +1,4 @@
-SetCapsLockState, AlwaysOff
-fallback_prevention := 0
-caps := 0
-*Capslock::caps := 1
-*Capslock Up::caps := 0
+
 
 #if fallback_prevention = 1
     Left::
@@ -33,3 +29,4 @@ caps := 0
     $*j::Send, {Blind}{Down}
     $*k::Send, {Blind}{Up}
     $*l::Send, {Blind}{Right}
+return
