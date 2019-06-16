@@ -14,3 +14,7 @@
     ^#w::
         run, "C:\Users\User\Documents"
         Return
+
+    ^#v::
+        run, "C:\Users\User\Videos"
+        Return
