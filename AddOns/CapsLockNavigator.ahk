@@ -30,7 +30,7 @@
     $*k::Send, {Blind}{Up}
     $*l::Send, {Blind}{Right}
 ;VsCode
-    ;Identation
+    ;Identation with mouse buttons
         $*LButton::Send, ^{[}    
         $*RButton::Send, ^{]}
 
@@ -69,5 +69,8 @@
             Send, ^{k}  
             Send, {{}
             return
-
+    ;Paste with enter key
+        $*Enter::
+            send, ^{v}
+            return
 return
