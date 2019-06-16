@@ -18,3 +18,8 @@
     ^#v::
         run, "C:\Users\User\Videos"
         Return
+
+; Win + numpad
+    #Numpad7::
+        run, explorer "ftp://192.168.42.129:2121/CD_CARD/"
+        Return
