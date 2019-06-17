@@ -14,11 +14,11 @@
             WinMinimize ahk_exe Chrome.exe
             
             If (ChromeState ="")
-            Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+            Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 10"
             
             return
         }else{
-            Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+            Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 10"
             return
         }
 ;Open Chrome in incognito. RightControl + Numpad0
