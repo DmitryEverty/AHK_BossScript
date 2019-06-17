@@ -1,4 +1,4 @@
-;LeftControl + Numpad0 = Open new instance or bring up existing.
+;Open new instance or bring up existing. LeftControl + Numpad0 
     <^Numpad0:: 
         if WinExist ("ahk_exe Chrome.exe") {
             Winget, ChromeState, MinMax, ahk_exe Chrome.exe    
@@ -21,9 +21,33 @@
             Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
             return
         }
-;RightControl + Numpad0 = Open Chrome in incognito
+;Open Chrome in incognito. RightControl + Numpad0
     >^Numpad0:: 
         Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" -incognito
         return
 
+;If Chrome Active
+    #IfWinActive ahk_exe Chrome.exe	
+    
+    ;Go fullscreen
+        Esc::
+            Send, {F11}
+            return
+    ;Show Bookmarks Bar
+        F9::
+            Send, ^+B
+            return
+    ;Next Tab. Tilda + 2
+        ` & 2::
+            Send, ^{Tab}
+            return
+    ;Next Tab. Tilda + 2
+        ` & 1::
+            Send, ^+{Tab}
+            return
+    ;Close Tab. Tilda + SpaceBar
+        ` & Space::
+            Send, ^{w}
+            return
 
+    #IfWinActive
