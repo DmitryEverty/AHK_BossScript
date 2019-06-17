@@ -2,17 +2,6 @@
 ;/////////////////////// IF WIN ACTIVE /////////////////////////////////
 ;///////////////////////////////////////////////////////////////////////
 
-;Chrome
-    #IfWinActive ahk_exe Chrome.exe	
-        Esc::
-            Send, {F11}
-            return
-
-        F9::
-            Send, ^+B
-            return
-
-    #IfWinActive
 ;Illustrator
     #IfWinActive ahk_exe Illustrator.exe
         MButton::^+a ; Deselect
