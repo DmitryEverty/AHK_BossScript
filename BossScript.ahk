@@ -5,6 +5,7 @@
 
 ;AddOns
 #Include, %A_ScriptDir%\AddOns\MiniFunctions.ahk
+#Include, %A_ScriptDir%\AddOns\TildaAndMouseControl.ahk
 #Include, %A_ScriptDir%\AddOns\ChromeHandler.ahk
 #Include, %A_ScriptDir%\AddOns\AppLauncher.ahk
 #Include, %A_ScriptDir%\AddOns\FolderShortcut.ahk
