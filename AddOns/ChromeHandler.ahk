@@ -56,5 +56,9 @@
             ` & Enter::
                 Send, ^{t}
                 return
-
+    ;Web links
+        ;Github
+            ` & g::
+            Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 10" https://github.com/
+            return
     #IfWinActive
