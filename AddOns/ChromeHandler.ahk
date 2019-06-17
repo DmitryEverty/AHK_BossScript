@@ -52,5 +52,9 @@
             ` & Space::
                 Send, ^{w}
                 return
+        ;New Tab. Tilda + Enter
+            ` & Enter::
+                Send, ^{t}
+                return
 
     #IfWinActive
