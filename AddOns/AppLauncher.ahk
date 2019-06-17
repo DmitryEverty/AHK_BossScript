@@ -11,4 +11,7 @@
     ` & c::
         Run, "C:\Users\User\AppData\Local\Programs\Microsoft VS Code\Code.exe"
         return
+    ` & Insert::
+        Run, "C:\Program Files\Git\git-bash.exe" --cd-to-home
+        return
 	
