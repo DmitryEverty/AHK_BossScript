@@ -15,3 +15,9 @@
         Run, "C:\Program Files\Git\git-bash.exe" --cd-to-home
         return
 	
+
+;Tilda + Fkeys
+    ` & F1::
+        Run, "C:\Users\User\Documents\a_Code\Projects\Ahk\VideoCreatorLaunchPad\VideoCreatorLaunchPad.ahk"
+        return
+	
