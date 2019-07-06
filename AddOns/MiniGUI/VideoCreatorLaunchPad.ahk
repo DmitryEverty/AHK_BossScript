@@ -73,7 +73,10 @@
         return
     }
 
-
+    #IfWinActive ahk_class AutoHotkeyGUI
+        Esc::
+            CloseApp()
+    #IfWinActive
 
 
 GuiClose:
