@@ -22,21 +22,23 @@
 
 ;>Gui Settings
 
+    Gui, +AlwaysOnTop
 
-
-        Gui, +AlwaysOnTop
+    ;Makes the window Transparent and withou title bar.
         Gui, Color, b642f5
-        ;TransparentWindow
-            Gui, +LastFound  ; Make the GUI window the last found window for use by the line below.
-            WinSet, TransColor, b642f5,
-
+        Gui, +LastFound  ; Make the GUI window the last found window for use by the line below.
+        WinSet, TransColor, b642f5,
         Gui, +ToolWindow -Caption
 
+    ;Getting Current Mouse Position.
         CoordMode, mouse, Screen
         MouseGetPos, CurrentMousePositionX, CurrentMousePositionY
             CurrentMousePositionX := CurrentMousePositionX-(WindowWidth*0.67)
             CurrentMousePositionY := CurrentMousePositionY-(WindowHeight*0.7)
-        Gui, Show, x%CurrentMousePositionX% y%CurrentMousePositionY% w%WindowWidth% h%WindowHeight%, `t
+
+    ;Showing the Gui
+    Gui, Show, x%CurrentMousePositionX% y%CurrentMousePositionY% w%WindowWidth% h%WindowHeight%, `t
+    
     return
 
 ;>ButtonFunctions
@@ -68,17 +70,14 @@
 
 ;>Functions
 
+    ;Closing Function
     CloseApp(){
         ExitApp
         return
     }
 
+    ; Close Gui with esc When Open.
     #IfWinActive ahk_class AutoHotkeyGUI
         Esc::
             CloseApp()
     #IfWinActive
-
-
-GuiClose:
-ExitApp
-return
