@@ -29,6 +29,7 @@
     $*j::Send, {Blind}{Down}
     $*k::Send, {Blind}{Up}
     $*l::Send, {Blind}{Right}
+    $*Space::Send, {Blind}{Right}
 ;VsCode
     ;Identation with mouse buttons
         $*LButton::Send, ^{[}    
