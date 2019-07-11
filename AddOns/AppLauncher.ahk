@@ -7,6 +7,7 @@
         return
     ` & m::
         Run, "C:\Program Files (x86)\Download Master\dmaster.exe" -addurl
+        return
     ` & b::
         Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" C:\Users\User\Documents\a_Code\Projects\Ahk\AHK_BossScript
         return
