@@ -20,6 +20,15 @@
     ` & /::
         Run, perfmon.exe /res
         return
+    ` & F7::
+        switchDesktopByNumber(5)
+        if WinExist("ahk_exe PotPlayerMini64.exe") {
+            return
+        }else{
+            Run, "C:\Program Files\DAUM\PotPlayer\PotPlayerMini64.exe"
+            return
+        }
+        return
 		
 
 ;Tilda + Fkeys
