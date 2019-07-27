@@ -17,7 +17,10 @@
     ` & Insert::
         Run, "C:\Program Files\Git\git-bash.exe" --cd-to-home
         return
-	
+    ` & /::
+        Run, perfmon.exe /res
+        return
+		
 
 ;Tilda + Fkeys
     ` & F1:: 

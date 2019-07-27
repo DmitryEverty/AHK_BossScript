@@ -26,6 +26,11 @@
         Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" -incognito
         return
 
+;Open Chrome Regardles if open or not. Control + Shift + NumpadIns. Strar is like shift.
+    *^NumpadIns:: 
+        Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 10"
+        return
+
 ;If Chrome Active
     #IfWinActive ahk_exe Chrome.exe
 
