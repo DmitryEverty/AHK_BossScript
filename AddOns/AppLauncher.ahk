@@ -29,7 +29,10 @@
             return
         }
         return
-		
+    Shift & `::
+        WinActivate, ahk_class Shell_TrayWnd        
+        return
+	
 
 ;Tilda + Fkeys
     ` & F1:: 
