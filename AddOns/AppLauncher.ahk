@@ -11,6 +11,10 @@
     ` & b::
         Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" C:\Users\User\Documents\a_Code\Projects\Ahk\AHK_BossScript
         return
+    ` & r::
+        ; Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+        Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" C:\Users\User\Media\a_Work\a_AMAZON\Rep.txt
+        return
     ` & c::
         Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe"
         return

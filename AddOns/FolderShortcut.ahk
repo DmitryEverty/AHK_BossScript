@@ -3,6 +3,10 @@
         run, "C:\Users\User\Downloads"
         Return
 
+    ^#h::
+        run, "C:\Users\User\Media"
+        Return
+
     ^#m::
         run, "C:\Users\User\Music"
         Return
@@ -12,7 +16,7 @@
         Return
 
     ^#w::
-        run, "C:\Users\User\Documents"
+        run, "C:\Users\User\Media\a_Work"
         Return
 
     ^#v::
