@@ -27,3 +27,11 @@
     #Numpad7::
         run, explorer "ftp://192.168.42.129:2121/CD_CARD/"
         Return
+
+    ^#Numpad1::
+        run, "C:\"
+        Return
+
+    ^#Numpad2::
+        run, "D:\"
+        Return
