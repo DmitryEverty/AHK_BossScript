@@ -3,17 +3,17 @@
         Run, SndVol.exe
         return
     ` & u::
-        Run, "C:\Users\%A_UserName%\AppData\Roaming\uTorrent\uTorrent.exe"
+        Run, "C:\Program Files (x86)\uTorrent\uTorrent.exe"
         return
     ` & m::
         Run, "C:\Program Files (x86)\Download Master\dmaster.exe" -addurl
         return
     ` & b::
-        Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" C:\Users\User\Documents\a_Code\Projects\Ahk\AHK_BossScript
+        Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" D:\b_MY_SPACE\a_CODING\c_AUTO_HOTKEY\AHK_BossScript
         return
     ` & r::
         ; Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe"
-        Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" C:\Users\User\Media\a_Work\a_AMAZON\Rep.txt
+        Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" D:\a_WORK_SPACE\b_DailyReport
         return
     ` & c::
         Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe"
