@@ -1,27 +1,23 @@
 ; Control + Win + Key
     ^#d::
-        run, "C:\Users\User\Downloads"
-        Return
-
-    ^#h::
-        run, "C:\Users\User\Media"
+        run, "C:\Users\%A_UserName%\Downloads"
         Return
 
     ^#m::
-        run, "C:\Users\User\Music"
+        run, "D:\m_MEDIA"
         Return
 
     ^#c::
-        run, "C:\Users\User\Documents\a_Code"
+        run, "D:\b_MY_SPACE\a_CODING"
         Return
 
     ^#w::
-        run, "C:\Users\User\Media\a_Work"
+        run, "D:\a_WORK_SPACE"
         Return
 
-    ^#v::
-        run, "C:\Users\User\Videos"
-        Return
+    ; ^#v::
+    ;     run, "C:\Users\User\Videos"
+    ;     Return
 
 ; Win + numpad
     #Numpad7::
