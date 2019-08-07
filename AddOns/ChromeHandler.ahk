@@ -14,11 +14,11 @@
             WinMinimize ahk_exe Chrome.exe
             
             If (ChromeState ="")
-            Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 10"
+            Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default"
             
             return
         }else{
-            Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 10"
+            Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default"
             return
         }
 ;Open Chrome in incognito. RightControl + Numpad0
@@ -28,7 +28,7 @@
 
 ;Open Chrome Regardles if open or not. Control + Shift + NumpadIns. Strar is like shift.
     *^NumpadIns:: 
-        Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 10"
+        Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default"
         return
 
 ;If Chrome Active
@@ -64,6 +64,6 @@
     ;Web links
         ;Github
             ` & g::
-            Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 10" https://github.com/
+            Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default" https://github.com/
             return
     #IfWinActive
