@@ -19,17 +19,28 @@
         ` & Numpad4::switchDesktopByNumber(4)
         ` & Numpad5::switchDesktopByNumber(5)
         AppsKey::
-            if CurrentDesktop >= 2
-            {
-                ;Send, ^#{Right}
-                switchDesktopByNumber(1)
-                ;Desktop = 2
-                return
-            }
-            else if CurrentDesktop <= 1
-            {
-                ;Send, ^#{Left}
-                switchDesktopByNumber(2)
-                ;Desktop = 1
-                return
-            }
+            ; Send, !d
+            ; Sleep, 100
+            ; Send, ^v
+            ; Sleep, 100
+            ; Send, {Enter}
+
+            ; Send, ^{f}
+            
+            ; Send, ^a
+            ; Send, ^v
+            return
+        ;     if CurrentDesktop >= 2
+        ;     {
+        ;         ;Send, ^#{Right}
+        ;         switchDesktopByNumber(1)
+        ;         ;Desktop = 2
+        ;         return
+        ;     }
+        ;     else if CurrentDesktop <= 1
+        ;     {
+        ;         ;Send, ^#{Left}
+        ;         switchDesktopByNumber(2)
+        ;         ;Desktop = 1
+        ;         return
+        ;     }

@@ -10,3 +10,7 @@
     F12::
         Winset, Alwaysontop, , A	
         return
+;Control_Backspace with right control
+    ; >control::
+    ;     Send, ^{BackSpace}
+    ;     return
