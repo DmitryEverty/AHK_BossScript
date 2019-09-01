@@ -8,8 +8,17 @@
         return
 ;Set Active Window On Top
     F12::
-        Winset, Alwaysontop, , A	
-        return
+        Winset, Alwaysontop, , A
+        WinGet, ExStyle, ExStyle, A
+        StringRight, styleKey, ExStyle, 1
+        
+        if (styleKey == "8"){
+            CreateLabel("Window is On Top")
+            return
+        }else{
+            CreateLabel("Window is Regular")
+            return
+        }
 ;Control_Backspace with right control
     ; >control::
     ;     Send, ^{BackSpace}
