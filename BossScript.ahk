@@ -11,6 +11,8 @@
 #Include, %A_ScriptDir%\AddOns\FolderShortcut.ahk
 #Include, %A_ScriptDir%\AddOns\AppSpecificRemapping.ahk
 #Include, %A_ScriptDir%\AddOns\TildaAndMouseControl.ahk
+#Include, %A_ScriptDir%\AddOns\DellDisplay\DellBrightness.ahk
 ;Low Level
 #Include, %A_ScriptDir%\AddOns\CapsLockNavigator.ahk
 #Include, %A_ScriptDir%\AddOns\VirtualDesktopManager.ahk
+#Include, %A_ScriptDir%\AddOns\ToolTipOSD\ToolTipOSD.ahk
