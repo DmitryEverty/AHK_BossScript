@@ -11,14 +11,22 @@
     ` & b::
         Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" D:\b_MY_SPACE\a_CODING\c_AUTO_HOTKEY\AHK_BossScript
         return
+
     ` & r::
         
+        return
+        
+    ` & p::
+        Run, "D:\r_EVERYTHING\r_INSTALATIONS\ADOBE\Adobe Photoshop CC 2019\Photoshop.exe"
         return
     ` & c::
         Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe"
         return
+    ` & a::
+        Run, "D:\r_EVERYTHING\r_MICRO\AIMP\AIMP.exe"
+        return
     ` & Insert::
-        Run, "C:\Program Files\Git\git-bash.exe" --cd-to-home
+        Run, C:\Windows\System32\cmd.exe /K "cd /D d:"
         return
     ` & /::
         Run, perfmon.exe /res

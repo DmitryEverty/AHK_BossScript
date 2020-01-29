@@ -19,6 +19,8 @@
             CreateLabel("Window is Regular")
             return
         }
+
+
 ;Control_Backspace with right control
     ; >control::
     ;     Send, ^{BackSpace}

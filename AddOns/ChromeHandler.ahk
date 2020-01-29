@@ -31,6 +31,12 @@
         Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Default"
         return
 
+; Open Chrome Regardles if open or not. Control + Shift + NumpadIns. 
+; Bringer Pet
+    *^NumpadDown:: 
+        Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 10"
+        return
+
 ;If Chrome Active
     #IfWinActive ahk_exe Chrome.exe
 
@@ -46,12 +52,14 @@
 
     ;Tilda As Modifier
         ;Next Tab. Tilda + 2
-            ` & 2::
+            ` & RButton::
                 Send, ^{Tab}
+                CreateLabel("Next Tab")
                 return
         ;Next Tab. Tilda + 2
-            ` & 1::
+            ` & LButton::
                 Send, ^+{Tab}
+                CreateLabel("Prev Tab")
                 return
         ;Close Tab. Tilda + SpaceBar
             ` & Space::

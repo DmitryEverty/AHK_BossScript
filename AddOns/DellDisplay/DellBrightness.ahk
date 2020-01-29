@@ -19,7 +19,7 @@ brightnessRegulator(action, quantity){
     if (action == "add"){
         state := currentBrightness + quantity
         if (state <= 100){
-            run, "D:\r_EVERYTHING\r_MICRO\Dell Display Manager\ddm.exe" /SetBrightnessLevel %state%
+            run, "D:\r_EVERYTHING\r_MICRO\Dell Display ManagerNX\ddm.exe" /SetBrightnessLevel %state%
             tTip := "Brightness: " + state
             CreateLabel(tTip)
             IniWrite, %state%, %A_ScriptDir%\AddOns\DellDisplay\Settings.ini, Variables, BrightnessLevel
@@ -31,7 +31,7 @@ brightnessRegulator(action, quantity){
     }else if(action == "sub"){
         state := currentBrightness - quantity
         if (state >= 0){
-            run, "D:\r_EVERYTHING\r_MICRO\Dell Display Manager\ddm.exe" /SetBrightnessLevel %state%
+            run, "D:\r_EVERYTHING\r_MICRO\Dell Display ManagerNX\ddm.exe" /SetBrightnessLevel %state%
             tTip := "Brightness: " + state
             CreateLabel(tTip)
             IniWrite, %state%, %A_ScriptDir%\AddOns\DellDisplay\Settings.ini, Variables, BrightnessLevel

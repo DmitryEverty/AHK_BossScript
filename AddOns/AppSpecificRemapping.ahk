@@ -35,8 +35,15 @@
     #IfWinActive
 ;VsCode
     #IfWinActive ahk_exe Code.exe
-        ` & Esc:: ;Close Current Folder
-            Send, ^{k}
-            Send, {f}
-            return
+        ;Close Current Folder
+            ` & Esc:: 
+                Send, ^{k}
+                Send, {f}
+                return
+
+        ; Comment Uncomment
+            vkE2::
+                Send, ^/
+                return
+                
     #IfWinActive

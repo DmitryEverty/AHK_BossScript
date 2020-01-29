@@ -21,8 +21,9 @@
         AppsKey::
             ; Send, !d
             ; Sleep, 100
-            ; Send, ^v
-            ; Sleep, 100
+            Send, ^f
+            Sleep, 100
+            Send, ^v
             ; Send, {Enter}
 
             ; Send, ^{f}
