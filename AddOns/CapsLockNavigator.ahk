@@ -1,5 +1,3 @@
-
-
 #if fallback_prevention = 1
     Left::
     Right::
@@ -74,4 +72,16 @@
         $*Enter::
             send, ^{v}
             return
+        $*NumpadEnter::
+            send, ^{v}
+            return
+
+    ; Extra Functions
+        $*t::
+            Send, %A_MMM%_%A_DD%_%A_YYYY%
+            Return 
+
+        $*p::
+            SendInput, '//div[@id="header"]'
+            Return
 return

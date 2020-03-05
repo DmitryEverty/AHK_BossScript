@@ -41,6 +41,4 @@ brightnessRegulator(action, quantity){
             Return
         }
     }
-
-
 }

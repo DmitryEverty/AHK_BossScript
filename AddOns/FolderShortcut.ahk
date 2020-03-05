@@ -15,9 +15,9 @@
         run, "D:\a_WORK_SPACE"
         Return
 
-    ; ^#v::
-    ;     run, "C:\Users\User\Videos"
-    ;     Return
+    ^#z::
+        run, "D:\z_BOX"
+        Return
 
 ; Win + numpad
     #Numpad7::

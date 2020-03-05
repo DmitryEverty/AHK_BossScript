@@ -13,17 +13,17 @@
         return
 
     ` & r::
-        
+        Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" C:\Users\Admin\Dropbox\AmazonWork\REPORTS
         return
         
     ` & p::
-        Run, "D:\r_EVERYTHING\r_INSTALATIONS\ADOBE\Adobe Photoshop CC 2019\Photoshop.exe"
+        Run, "D:\r_EVERYTHING\r_INSTALATIONS\ADOBE\Adobe Photoshop 2020\Photoshop.exe"
         return
     ` & c::
         Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe"
         return
     ` & a::
-        Run, "D:\r_EVERYTHING\r_MICRO\AIMP\AIMP.exe"
+        Run, "D:\r_EVERYTHING\r_MICRO\AIMP\AIMP.exe" /RESTORE 
         return
     ` & Insert::
         Run, C:\Windows\System32\cmd.exe /K "cd /D d:"
@@ -33,7 +33,8 @@
         return
 
     Shift & `::
-        WinActivate, ahk_class Shell_TrayWnd        
+        WinActivate, ahk_class Shell_TrayWnd
+        CreateLabel("Taskbar on focus")
         return
 	
 
@@ -57,4 +58,22 @@
             }
             return
 
+    ; Launch Telegram
+        t::
+            Process, Exist, Telegram.exe
+            IF !errorlevel=0{
+                ; Process, Close, Telegram.exe
+                run, "C:\Users\Admin\AppData\Roaming\Telegram Desktop\Telegram.exe"
+                CreateLabel("Showing Telegram")
+            }else{
+                run, "C:\Users\Admin\AppData\Roaming\Telegram Desktop\Telegram.exe"
+                CreateLabel("Launching Telegram")
+            }
+            return
+
+    ; Open Desktop Folder
+        d::
+            run, "C:\Users\Admin\Desktop"
+            CreateLabel("Openning Desktop Folder")
+        return
     #IfWinActive

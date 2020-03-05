@@ -9,6 +9,8 @@
 
     #IfWinActive
 
+
+
 ;Premiere Pro
     #IfWinActive ahk_exe Adobe Premiere Pro.exe
         Tab::
@@ -24,6 +26,8 @@
             return
         
     #IfWinActive
+
+
 ;Explorer
     #IfWinActive ahk_class CabinetWClass	
         Esc::
@@ -32,7 +36,22 @@
         F1::
             WinMove, ahk_class CabinetWClass, , 287, 69, 870, 657
             return
+
+        ; View Change
+        ^Numpad1::
+            send, ^+{1}
+            return
+        ^Numpad2::
+            send, ^+{2}
+            return
+        ^Numpad3::
+            send, ^+{3}
+            return
+
     #IfWinActive
+
+
+
 ;VsCode
     #IfWinActive ahk_exe Code.exe
         ;Close Current Folder

@@ -34,7 +34,7 @@
 ; Open Chrome Regardles if open or not. Control + Shift + NumpadIns. 
 ; Bringer Pet
     *^NumpadDown:: 
-        Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 10"
+        Run, "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --profile-directory="Profile 1"
         return
 
 ;If Chrome Active
@@ -52,15 +52,15 @@
 
     ;Tilda As Modifier
         ;Next Tab. Tilda + 2
-            ` & RButton::
-                Send, ^{Tab}
-                CreateLabel("Next Tab")
+            ; ` & RButton::
+            ;     Send, ^{Tab}
+            ;     CreateLabel("Next Tab")
                 return
         ;Next Tab. Tilda + 2
-            ` & LButton::
-                Send, ^+{Tab}
-                CreateLabel("Prev Tab")
-                return
+            ; ` & LButton::
+            ;     Send, ^+{Tab}
+            ;     CreateLabel("Prev Tab")
+            ;     return
         ;Close Tab. Tilda + SpaceBar
             ` & Space::
                 Send, ^{w}

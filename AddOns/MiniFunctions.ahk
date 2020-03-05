@@ -22,6 +22,6 @@
 
 
 ;Control_Backspace with right control
-    ; >control::
+    ; Up::Shift
     ;     Send, ^{BackSpace}
     ;     return
