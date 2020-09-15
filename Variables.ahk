@@ -7,12 +7,13 @@
     tg_exe = C:\Users\%A_UserName%\AppData\Roaming\Telegram Desktop\Telegram.exe
     bitrix_exe = C:\Program Files (x86)\Bitrix24\Bitrix24.exe
 
-;CapsLockNavigator
+;Enable Caps Lock as a Mod Key
     SetCapsLockState, AlwaysOff
     fallback_prevention := 0
     caps := 0
     *Capslock::caps := 1
     *Capslock Up::caps := 0
+
 ;VirtualDesktopManager
     ; Globals
         DesktopCount = 2        ; Windows starts with 2 desktops at boot
