@@ -10,6 +10,14 @@ NumpadSub::
 brightnessRegulator("sub", 5)
 Return
 
+^NumpadAdd::
+brightnessRegulator("add", 1)
+Return
+
+^NumpadSub::
+brightnessRegulator("sub", 1)
+Return
+
 #IfWinActive
 
 
