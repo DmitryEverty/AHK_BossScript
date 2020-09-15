@@ -12,11 +12,15 @@
         Return
 
     ^#w::
-        run, "D:\a_WORK_SPACE"
+        run, "D:\a_WORK"
         Return
 
     ^#z::
         run, "D:\z_BOX"
+        Return
+
+    ^#p::
+        run, "D:\a_WORK\o_PROJECTS"
         Return
 
 ; Win + numpad
