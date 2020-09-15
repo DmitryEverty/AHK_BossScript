@@ -9,7 +9,13 @@
 
     #IfWinActive
 
+;Illustrator
+    #IfWinActive ahk_exe Photoshop.exe
+        vkE2::
+            Send, ^{t}
+            return
 
+    #IfWinActive
 
 ;Premiere Pro
     #IfWinActive ahk_exe Adobe Premiere Pro.exe
@@ -25,6 +31,14 @@
             Send, {Space}
             return
         
+        1::
+            send, +{Up}
+            return
+        
+        2::
+            send, +{Down}
+            return
+
     #IfWinActive
 
 
@@ -48,6 +62,10 @@
             send, ^+{3}
             return
 
+        Home::
+            send, !{Up}
+            return
+
     #IfWinActive
 
 
@@ -65,4 +83,26 @@
                 Send, ^/
                 return
                 
+    #IfWinActive
+
+    #IfWinActive ahk_exe EXCEL.EXE
+
+        F1::
+            Send, {Alt}
+            Send, 4
+            return
+
+        F2::
+            Send, {Alt}
+            Send, 6
+            return
+
+        ; 3::
+        ;     send, ^{Up}
+        ;     send, !{Down}
+        ;     send, {g}
+
+        ;     return
+
+
     #IfWinActive
