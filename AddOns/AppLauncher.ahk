@@ -8,12 +8,28 @@
     ` & m::
         Run, "C:\Program Files (x86)\Download Master\dmaster.exe" -addurl
         return
+    ` & n::
+        Run, notepad.exe
+        return
     ` & b::
         Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" D:\b_MY_SPACE\a_CODING\c_AUTO_HOTKEY\AHK_BossScript
         return
 
     ` & r::
         Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" C:\Users\Admin\Dropbox\AmazonWork\REPORTS
+        return
+
+    ` & s::
+        Run, "C:\Program Files\Sublime Text 3\sublime_text.exe"
+        return
+
+    ` & x::
+        Run, "C:\Program Files (x86)\XYplorer\XYplorer.exe"
+        return
+
+    ` & g::
+        CreateLabel("Lanuching: Gammy")
+        Run, "D:\r_EVERYTHING\r_MICRO\gammy v0.9.55\gammy.exe"
         return
         
     ` & p::
@@ -32,11 +48,10 @@
         Run, perfmon.exe /res
         return
 
-    Shift & `::
-        WinActivate, ahk_class Shell_TrayWnd
-        CreateLabel("Taskbar on focus")
+    ; Open todoist for windows
+    ` & Home::
+        Send, ^!{Home}
         return
-	
 
 ;Tilda + Fkeys
     ` & F1:: 
@@ -47,19 +62,19 @@
 
     #IfWinActive, ahk_class Shell_TrayWnd
     ; Launch Kill Bitrix
-        b::
+        ::btx::
             Process, Exist, Bitrix24.exe
             IF !errorlevel=0{
-                Process, Close, Bitrix24.exe
                 CreateLabel("Closing Bitrix")
+                Process, Close, Bitrix24.exe
             }else{
-                run, "C:\Program Files (x86)\Bitrix24\Bitrix24.exe"
                 CreateLabel("Launching Bitrix")
+                run, "C:\Program Files (x86)\Bitrix24\Bitrix24.exe"
             }
             return
 
     ; Launch Telegram
-        t::
+        ::tg::
             Process, Exist, Telegram.exe
             IF !errorlevel=0{
                 ; Process, Close, Telegram.exe
@@ -70,10 +85,22 @@
                 CreateLabel("Launching Telegram")
             }
             return
+            
+    ; Open SuperDrop
+        ::superd::
+            Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" D:\b_MY_SPACE\a_CODING\b_PYTHON\a_PYTHON_PROJECTS\SuperDropBot
+            CreateLabel("SuperDropBot")
+            return
 
-    ; Open Desktop Folder
-        d::
-            run, "C:\Users\Admin\Desktop"
-            CreateLabel("Openning Desktop Folder")
-        return
+    ;Show or hide Desctop icons.
+    F1::
+        ControlGet, HWND, Hwnd,, SysListView321, ahk_class WorkerW
+
+        If DllCall("IsWindowVisible", UInt, HWND)
+            WinHide, ahk_id %HWND%
+        Else
+            WinShow, ahk_id %HWND%
+        Return
+
+
     #IfWinActive
