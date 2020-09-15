@@ -4,11 +4,11 @@
         return
 
     ` & u::
-        Run, "C:\Program Files (x86)\uTorrent\uTorrent.exe"
+        Run, %torrent_exe%
         return
 
     ` & m::
-        Run, "C:\Program Files (x86)\Download Master\dmaster.exe" -addurl
+        Run, %dmaster_exe% -addurl
         return
 
     ` & n::
@@ -16,11 +16,11 @@
         return
 
     ` & b::
-        Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" D:\b_AREAS\b_CODING\c_AUTO_HOTKEY\AHK_BossScript
+        Run, %vscode_exe% D:\b_AREAS\b_CODING\c_AUTO_HOTKEY\AHK_BossScript
         return
 
     ` & r::
-        Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" C:\Users\Admin\Dropbox\AmazonWork\REPORTS
+        ; Run, %vscode_exe% C:\Users\Admin\Dropbox\AmazonWork\REPORTS
         return
 
     ` & s::
@@ -41,7 +41,7 @@
         return
 
     ` & c::
-        Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe"
+        Run, %vscode_exe%
         return
 
     ` & a::
@@ -97,7 +97,7 @@
             
     ; Open SuperDrop
         ::superd::
-            Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" D:\b_MY_SPACE\a_CODING\b_PYTHON\a_PYTHON_PROJECTS\SuperDropBot
+            Run, %vscode_exe% D:\b_MY_SPACE\a_CODING\b_PYTHON\a_PYTHON_PROJECTS\SuperDropBot
             CreateLabel("SuperDropBot")
             return
 
