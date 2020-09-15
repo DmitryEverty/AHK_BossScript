@@ -2,15 +2,19 @@
     ` & v::
         Run, SndVol.exe
         return
+
     ` & u::
         Run, "C:\Program Files (x86)\uTorrent\uTorrent.exe"
         return
+
     ` & m::
         Run, "C:\Program Files (x86)\Download Master\dmaster.exe" -addurl
         return
+
     ` & n::
         Run, notepad.exe
         return
+
     ` & b::
         Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" D:\b_AREAS\b_CODING\c_AUTO_HOTKEY\AHK_BossScript
         return
@@ -35,15 +39,19 @@
     ` & p::
         Run, "D:\r_EVERYTHING\r_INSTALATIONS\ADOBE\Adobe Photoshop 2020\Photoshop.exe"
         return
+
     ` & c::
         Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe"
         return
+
     ` & a::
         Run, "D:\r_EVERYTHING\r_MICRO\AIMP\AIMP.exe" /RESTORE 
         return
+
     ` & Insert::
         Run, C:\Windows\System32\cmd.exe /K "cd /D d:"
         return
+
     ` & /::
         Run, perfmon.exe /res
         return
@@ -57,7 +65,8 @@
     ` & F1:: 
         Run, "%A_ScriptDir%\AddOns\MiniGUI\VideoCreatorLaunchPad.ahk"
         return
-	
+
+
 ; When Windows taskbar in focus
 
     #IfWinActive, ahk_class Shell_TrayWnd
