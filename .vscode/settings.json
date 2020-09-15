@@ -8,6 +8,12 @@
         "**/.DS_Store": true,
         "desktop.ini": true,
         "folderico-H15728.ico": true,
-        "gammylog.txt": true
-    }
+        "gammylog.txt": true,
+        ".vscode": true,
+        "Font": true,
+        "CMap": true,
+        "CIDFont": true,
+        "README.md": true
+    },
+    "explorerExclude.backup": null
 }
