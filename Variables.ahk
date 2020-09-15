@@ -2,6 +2,10 @@
     count = 1
     Desktop = 1
     Previous = 0
+
+    tg_exe = C:\Users\%A_UserName%\AppData\Roaming\Telegram Desktop\Telegram.exe
+    bitrix_exe = C:\Program Files (x86)\Bitrix24\Bitrix24.exe
+
 ;CapsLockNavigator
     SetCapsLockState, AlwaysOff
     fallback_prevention := 0

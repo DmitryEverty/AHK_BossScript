@@ -78,7 +78,7 @@
                 Process, Close, Bitrix24.exe
             }else{
                 CreateLabel("Launching Bitrix")
-                run, "C:\Program Files (x86)\Bitrix24\Bitrix24.exe"
+                run, %bitrix_exe%
             }
             return
 
@@ -87,10 +87,10 @@
             Process, Exist, Telegram.exe
             IF !errorlevel=0{
                 ; Process, Close, Telegram.exe
-                run, "C:\Users\%A_UserName%\AppData\Roaming\Telegram Desktop\Telegram.exe"
+                run, %tg_exe%
                 CreateLabel("Showing Telegram")
             }else{
-                run, "C:\Users\%A_UserName%\AppData\Roaming\Telegram Desktop\Telegram.exe"
+                run, %tg_exe%
                 CreateLabel("Launching Telegram")
             }
             return
