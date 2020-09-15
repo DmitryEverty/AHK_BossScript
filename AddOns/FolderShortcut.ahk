@@ -8,7 +8,7 @@
         Return
 
     ^#c::
-        run, "D:\b_MY_SPACE\a_CODING"
+        run, "D:\b_AREAS\b_CODING"
         Return
 
     ^#w::
@@ -20,7 +20,7 @@
         Return
 
     ^#p::
-        run, "D:\a_WORK\o_PROJECTS"
+        run, "D:\a_WORK\a_IN_PROGRESS"
         Return
 
 ; Win + numpad
