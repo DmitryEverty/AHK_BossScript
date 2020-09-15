@@ -87,10 +87,10 @@
             Process, Exist, Telegram.exe
             IF !errorlevel=0{
                 ; Process, Close, Telegram.exe
-                run, "C:\Users\Admin\AppData\Roaming\Telegram Desktop\Telegram.exe"
+                run, "C:\Users\%A_UserName%\AppData\Roaming\Telegram Desktop\Telegram.exe"
                 CreateLabel("Showing Telegram")
             }else{
-                run, "C:\Users\Admin\AppData\Roaming\Telegram Desktop\Telegram.exe"
+                run, "C:\Users\%A_UserName%\AppData\Roaming\Telegram Desktop\Telegram.exe"
                 CreateLabel("Launching Telegram")
             }
             return
