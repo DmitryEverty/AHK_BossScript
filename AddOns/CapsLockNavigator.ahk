@@ -27,7 +27,25 @@
     $*j::Send, {Blind}{Down}
     $*k::Send, {Blind}{Up}
     $*l::Send, {Blind}{Right}
-    $*Space::Send, {Blind}{Right}
+
+    $*u::Send, {Blind}{Home}
+    $*i::Send, {Blind}{End}
+
+    $*b::Send, {Blind}{BackSpace}
+    $*!b::Send, ^{BackSpace}
+
+    $*n::Send, {Blind}{Delete}
+    $*!n::Send, ^{Delete}
+    ; $*Space::Send, {Blind}{Right}
+
+    ; Scrolling
+    $*!j::
+        Send, {WheelDown}
+        return
+    $*!k::
+        Send, {WheelUp}
+        return 
+
 ;VsCode
     ;Identation with mouse buttons
         $*LButton::Send, ^{[}    
@@ -76,6 +94,14 @@
             send, ^{v}
             return
 
+        $*0::
+            send, {End}
+            return
+
+        $*6::
+            send, {Home}
+            return
+
     ; Extra Functions
         $*t::
             Send, %A_MMM%_%A_DD%_%A_YYYY%
@@ -84,4 +110,21 @@
         $*p::
             SendInput, '//div[@id="header"]'
             Return
+
+        $*Space::
+        WinActivate, ahk_class Shell_TrayWnd
+        CreateLabel("Taskbar on focus")
+        return
+
+    ; Swich Desktops
+        ; Next
+        $*.::
+        Send ^#{Right}
+        return
+
+        ; Previous
+        $*,::
+        Send ^#{Left}
+        return
 return
+
