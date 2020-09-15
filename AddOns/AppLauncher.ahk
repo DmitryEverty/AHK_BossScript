@@ -12,7 +12,7 @@
         Run, notepad.exe
         return
     ` & b::
-        Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" D:\b_MY_SPACE\a_CODING\c_AUTO_HOTKEY\AHK_BossScript
+        Run, "C:\Users\%A_UserName%\AppData\Local\Programs\Microsoft VS Code\Code.exe" D:\b_AREAS\b_CODING\c_AUTO_HOTKEY\AHK_BossScript
         return
 
     ` & r::
