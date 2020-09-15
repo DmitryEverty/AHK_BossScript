@@ -40,28 +40,34 @@
 ;If Chrome Active
     #IfWinActive ahk_exe Chrome.exe
 
+    ;Prev Tab
+    ` & LButton::
+        Send, ^+{Tab}
+        return
+    
+    ;Next Tab
+    ` & RButton::
+        Send, ^{Tab}
+        return
+
+    ;Close active tab
+    ` & MButton::
+        Send, ^{w}
+        return
+
+    ; Esc::
+    ;     search_on_amazon_v2()
+    ;     ; cb = https://www.amazon.com/gp/product/%clipboard% 
+    ;     ; Run, chrome.exe %cb%
+    ;     return
+
     ;Misc funtions
-        ;Go fullscreen
-            Esc::
-                Send, {F11}
-                return
+
         ;Show Bookmarks Bar
             F9::
                 Send, ^+B
                 return
 
-    ;Tilda As Modifier
-        ;Next Tab. Tilda + 2
-            ; ` & RButton::
-            ;     Send, ^{Tab}
-            ;     CreateLabel("Next Tab")
-                return
-        ;Next Tab. Tilda + 2
-            ; ` & LButton::
-            ;     Send, ^+{Tab}
-            ;     CreateLabel("Prev Tab")
-            ;     return
-        ;Close Tab. Tilda + SpaceBar
             ` & Space::
                 Send, ^{w}
                 return
