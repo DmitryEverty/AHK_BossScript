@@ -5,6 +5,8 @@
 
 ;AddOns
 #Include, %A_ScriptDir%\AddOns\UTILS\RELOADER.ahk
+#Include, %A_ScriptDir%\AddOns\UTILS\WP_FOCUS.ahk
+
 #Include, %A_ScriptDir%\AddOns\MiniFunctions.ahk
 #Include, %A_ScriptDir%\AddOns\DesctopIconShowHide.ahk
 #Include, %A_ScriptDir%\AddOns\ChromeHandler.ahk
