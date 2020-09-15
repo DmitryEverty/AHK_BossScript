@@ -37,7 +37,7 @@
         return
         
     ` & p::
-        Run, "D:\r_EVERYTHING\r_INSTALATIONS\ADOBE\Adobe Photoshop 2020\Photoshop.exe"
+        Run, %photoshop_exe%
         return
 
     ` & c::
@@ -45,7 +45,7 @@
         return
 
     ` & a::
-        Run, "D:\r_EVERYTHING\r_MICRO\AIMP\AIMP.exe" /RESTORE 
+        Run, %aimp_exe% /RESTORE 
         return
 
     ` & Insert::

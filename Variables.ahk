@@ -9,6 +9,8 @@
     vscode_exe = C:\Program Files\Microsoft VS Code\Code.exe
     torrent_exe = C:\Program Files (x86)\uTorrent\uTorrent.exe
     dmaster_exe = C:\Program Files (x86)\Download Master\dmaster.exe
+    photoshop_exe = D:\r_EVERYTHING\r_INSTALATIONS\Adobe Photoshop 2020\Photoshop.exe
+    aimp_exe = D:\r_EVERYTHING\r_MICRO\AIMP\AIMP.exe
 
 ;Enable Caps Lock as a Mod Key
     SetCapsLockState, AlwaysOff
