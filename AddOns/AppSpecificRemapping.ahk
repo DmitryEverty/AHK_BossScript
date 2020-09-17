@@ -106,3 +106,23 @@
 
 
     #IfWinActive
+
+    #IfWinActive ahk_exe Ableton Live 10 Suite.exe
+
+        Tab::
+            send, ^+{m}
+            return
+
+        ; NumpadDiv::
+        ;     send, ^{e}
+        ;     return
+
+        vkE2::
+            Send, ^{e}
+            return
+
+        F4::
+            send, ^!{p}
+            return
+
+    #IfWinActive
