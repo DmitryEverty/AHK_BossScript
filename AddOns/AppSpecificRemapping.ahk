@@ -9,7 +9,7 @@
 
     #IfWinActive
 
-;Illustrator
+;Photoshop
     #IfWinActive ahk_exe Photoshop.exe
         vkE2::
             Send, ^{t}
@@ -85,6 +85,7 @@
                 
     #IfWinActive
 
+;Excel
     #IfWinActive ahk_exe EXCEL.EXE
 
         F1::
@@ -107,8 +108,10 @@
 
     #IfWinActive
 
+;Ableton
     #IfWinActive ahk_exe Ableton Live 10 Suite.exe
 
+        ; Create new midi clip
         Tab::
             send, ^+{m}
             return
@@ -117,10 +120,12 @@
         ;     send, ^{e}
         ;     return
 
+        ; Split clip
         vkE2::
             Send, ^{e}
             return
 
+        ; Show-hide plugin window
         F4::
             send, ^!{p}
             return
