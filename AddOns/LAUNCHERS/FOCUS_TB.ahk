@@ -2,7 +2,7 @@
 
     ; Open Desktop Folder
         :*:dt::
-            run, "C:\Users\Admin\Desktop"
+            run, "C:\Users\%A_UserName%\Desktop"
             CreateLabel("Folder: Desktop")
         return
 
