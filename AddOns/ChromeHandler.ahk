@@ -75,6 +75,13 @@
             ` & Enter::
                 Send, ^{t}
                 return
+        
+        ; Caps Mods
+        ; Spreadsheets: Add note
+        !r::
+            send, +{F2}
+            return
+
     ;Web links
         ;Github
             ` & g::
