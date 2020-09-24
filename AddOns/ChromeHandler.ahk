@@ -55,6 +55,11 @@
         Send, ^{w}
         return
 
+    ; Toggle Inspect
+    ` & Insert::
+        send, ^+{c}
+        return
+
     ; Esc::
     ;     search_on_amazon_v2()
     ;     ; cb = https://www.amazon.com/gp/product/%clipboard% 
