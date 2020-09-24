@@ -1,0 +1,2 @@
+; Python self
+    :*:slef::self
