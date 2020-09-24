@@ -82,7 +82,7 @@
             vkE2::
                 Send, ^/
                 return
-                
+  
     #IfWinActive
 
 ;Excel
@@ -114,6 +114,14 @@
         ; Create new midi clip
         Tab::
             send, ^+{m}
+            return
+
+        Home::
+            send, {Up}
+            return
+        
+        ^!Tab::
+            send, {Down}
             return
 
         ; NumpadDiv::
