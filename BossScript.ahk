@@ -18,6 +18,7 @@
 
 #Include, %A_ScriptDir%\AddOns\AppLauncher.ahk
 #Include, %A_ScriptDir%\AddOns\LAUNCHERS\FOCUS_TB.ahk
+#Include, %A_ScriptDir%\AddOns\LAUNCHERS\HOTSRTING_FROM_WINSEARCH.ahk
 
 #Include, %A_ScriptDir%\AddOns\FolderShortcut.ahk
 #Include, %A_ScriptDir%\AddOns\AppSpecificRemapping.ahk
