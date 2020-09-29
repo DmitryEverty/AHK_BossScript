@@ -112,8 +112,7 @@
             Return
 
         $*Space::
-        WinActivate, ahk_class Shell_TrayWnd
-        CreateLabel("Taskbar on focus")
+        send, {enter}
         return
 
     ; Swich Desktops
