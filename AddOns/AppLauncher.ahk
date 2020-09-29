@@ -69,37 +69,18 @@
 
 ; When Windows taskbar in focus
 
-    #IfWinActive, ahk_class Shell_TrayWnd
-    ; Launch Kill Bitrix
-        ::btx::
-            Process, Exist, Bitrix24.exe
-            IF !errorlevel=0{
-                CreateLabel("Closing Bitrix")
-                Process, Close, Bitrix24.exe
-            }else{
-                CreateLabel("Launching Bitrix")
-                run, %bitrix_exe%
-            }
-            return
-
-    ; Launch Telegram
-        ::tg::
-            Process, Exist, Telegram.exe
-            IF !errorlevel=0{
-                ; Process, Close, Telegram.exe
-                run, %tg_exe%
-                CreateLabel("Showing Telegram")
-            }else{
-                run, %tg_exe%
-                CreateLabel("Launching Telegram")
-            }
-            return
-            
-    ; Open SuperDrop
-        ::superd::
-            Run, %vscode_exe% D:\b_MY_SPACE\a_CODING\b_PYTHON\a_PYTHON_PROJECTS\SuperDropBot
-            CreateLabel("SuperDropBot")
-            return
+    ; #IfWinActive, ahk_class Shell_TrayWnd
+    ; ; Launch Kill Bitrix
+    ;     ::btx::
+    ;         Process, Exist, Bitrix24.exe
+    ;         IF !errorlevel=0{
+    ;             CreateLabel("Closing Bitrix")
+    ;             Process, Close, Bitrix24.exe
+    ;         }else{
+    ;             CreateLabel("Launching Bitrix")
+    ;             run, %bitrix_exe%
+    ;         }
+    ;         return
 
     ;Show or hide Desctop icons.
     F1::
