@@ -139,3 +139,12 @@
             return
 
     #IfWinActive
+
+; Windows taskbar in focus
+    #IfWinActive, ahk_class Shell_TrayWnd
+    ; Show Todoist with middle mouse button
+    MButton::
+        Send, ^!{Home}
+            return
+
+    #IfWinActive
