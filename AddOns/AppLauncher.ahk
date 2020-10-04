@@ -69,7 +69,7 @@
 
 ; When Windows taskbar in focus
 
-    ; #IfWinActive, ahk_class Shell_TrayWnd
+    #IfWinActive, ahk_class Shell_TrayWnd
     ; ; Launch Kill Bitrix
     ;     ::btx::
     ;         Process, Exist, Bitrix24.exe
